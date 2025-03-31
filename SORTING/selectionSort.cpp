@@ -6,13 +6,13 @@ using namespace std;
 void Selection_Sort(int arr[], int n)
 {
 
-    for (int i = 0; i < n - 1; i++)
+    for (int i = 0; i < n-1 ; i++)
     {
         int minIndex = i;
 
         for (int j = i + 1; j < n; j++)
         {
-
+            cout<<j<<" ";
             if (arr[j] < arr[minIndex])
             {
                 minIndex = j;
@@ -23,13 +23,13 @@ void Selection_Sort(int arr[], int n)
     }
 }
 
-
-void printArray(int arr[], int n){
-    for(int i=0;i<n;i++){
-        cout<<arr[i]<<" ";
+void printArray(int arr[], int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        cout << arr[i] << " ";
     }
 }
-
 
 int main()
 {
